@@ -93,3 +93,16 @@ Provide the target user, workflow, desired outcome, model environment, quality r
 ## Practical Principle
 
 Do not optimize a demo. Optimize the user's successful completion of a real task, including the cost and failure cases required to deliver it reliably.
+
+
+## Supporting Resources
+
+| File | Purpose |
+|---|---|
+| [AI feature product brief](resources/ai-feature-product-brief.md) | Decide whether AI is justified and define data, behavior, metrics, and rollout. |
+| [LLM evaluation matrix](resources/llm-evaluation-matrix.csv) | Record representative test cases, quality, safety, latency, and cost. |
+| [Production readiness checklist](resources/production-readiness-checklist.md) | Review reliability, validation, privacy, security, cost controls, and rollback. |
+
+## Third-party source and licensing
+
+The upstream metadata in [SKILL.md](SKILL.md) identifies the skill source as vibeship-spawner-skills under Apache License 2.0. See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and [licenses/Apache-2.0.txt](licenses/Apache-2.0.txt). The root MIT License applies to original repository material and does not replace the upstream license for the skill content.
