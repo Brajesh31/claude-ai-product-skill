@@ -1,40 +1,95 @@
-# Ai Product
+# claude-ai-product-skill
+
+A Claude Code skill for designing AI-powered products that are useful, reliable, safe, and economically viable.
 
 ## Overview
 
-This repository provides a dedicated Claude skill for ai product. It combines domain-specific guidance with a repeatable process for completing related tasks.
+Building an AI feature is not the same as shipping an AI product. A production product needs a clear user problem, reliable model behavior, measurable quality, sensible costs, and an experience that helps users understand and control the system.
 
-## What It Provides
+This skill covers product architecture and implementation patterns for LLM-powered features, retrieval systems, prompt design, AI user experience, validation, and operational cost management.
 
-- A clear definition of the skill's purpose and scope.
-- Practical instructions, concepts, and recommended workflows.
-- Guidance for turning task context into structured outputs.
-- Supporting files included in the skill package.
+## Main Capabilities
 
-## Repository Structure
+- Identify valuable AI product use cases.
+- Design LLM integration architecture.
+- Build structured outputs with schema validation.
+- Implement streaming and progress feedback.
+- Version prompts and evaluate changes.
+- Design retrieval-augmented generation workflows.
+- Improve output quality and reduce hallucinations.
+- Manage latency, token usage, and inference cost.
+- Build user experiences that communicate uncertainty and limitations.
+- Add safety controls and human review where appropriate.
 
-```text
-SKILL.md
+## Product Design Principles
+
+### Solve a Specific User Problem
+
+Start with the workflow and user outcome. Do not add AI merely because a model can be integrated.
+
+### Validate Model Output
+
+Treat generated content as untrusted until it passes the validation required by the application. Use schemas, business rules, and deterministic checks.
+
+### Design for Failure
+
+Plan for timeouts, rate limits, empty responses, invalid output, and provider outages. Provide a useful fallback or recovery path.
+
+### Make the Experience Understandable
+
+Explain what the AI feature does, show progress for long-running work, and give users control over consequential actions.
+
+### Measure Quality and Cost
+
+Track task success, user corrections, latency, token usage, and cost per successful outcome.
+
+## Installation
+
+```bash
+git clone https://github.com/Brajesh31/claude-ai-product-skill.git ~/.claude/skills/ai-product
 ```
 
-## Requirements
+## Usage
 
-- A Claude-compatible environment that supports skills.
-- Clear task objectives and relevant context.
-- Human review of recommendations and generated outputs.
+Invoke the skill when planning or improving an AI product feature:
 
-## Getting Started
+```text
+/ai-product
+```
 
-1. Review `SKILL.md` and understand the expected inputs and outputs.
-2. Add the skill to the skills directory supported by your Claude environment.
-3. Start a task that falls within the skill's stated scope.
-4. Provide constraints, success criteria, and useful background.
-5. Check the result for accuracy and fit before using it.
+Provide the target user, workflow, desired outcome, model environment, quality requirements, and budget constraints.
 
-## Usage Guidance
+## Recommended Workflow
 
-Keep the task focused and provide concrete context. Treat outputs as working material that should be validated against current product, technical, or business requirements.
+1. Define the user problem and measurable product outcome.
+2. Decide whether AI is necessary for the workflow.
+3. Choose a model and integration pattern.
+4. Define inputs, outputs, and validation rules.
+5. Prototype with representative cases.
+6. Evaluate quality, latency, and cost.
+7. Design user feedback and failure states.
+8. Add privacy, security, and abuse safeguards.
+9. Roll out gradually and monitor real usage.
+10. Improve based on observed failures and user outcomes.
 
-## License
+## Production Checklist
 
-MIT. See [LICENSE](LICENSE).
+- Prompts are versioned and reviewed.
+- Structured outputs are validated.
+- Model failures and timeouts are handled.
+- Sensitive data is protected.
+- Cost limits and rate limits are defined.
+- Quality is measured with representative evaluations.
+- User-facing limitations are clear.
+- Human approval is required for high-impact actions.
+- Logs avoid unnecessary sensitive content.
+- Rollback and fallback behavior are understood.
+
+## Repository Contents
+
+- `SKILL.md`: Main AI product design and implementation guidance.
+- `README.md`: Product workflow, engineering patterns, and checklist.
+
+## Practical Principle
+
+Do not optimize a demo. Optimize the user's successful completion of a real task, including the cost and failure cases required to deliver it reliably.
