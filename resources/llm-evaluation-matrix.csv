@@ -1,0 +1,2 @@
+Case ID,Use case,Input category,Expected behavior,Ground-truth reference,Correctness score,Groundedness score,Format validity,Refusal or safety behavior,Latency ms,Token cost,Pass,Notes
+case-001,,,,,,,,,,,, 
