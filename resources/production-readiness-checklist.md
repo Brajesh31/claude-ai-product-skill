@@ -10,7 +10,7 @@
 - [ ] Prompts and model settings are versioned.
 - [ ] Representative evaluation cases cover common and edge inputs.
 - [ ] Structured outputs are schema-validated.
-- [ ] Factual claims are grounded in approved sources where required.
+- [ ] Factual claims are checked against approved reference material where required.
 - [ ] Regression tests run after model or prompt changes.
 - [ ] Prompt injection and malicious retrieved content are tested.
 

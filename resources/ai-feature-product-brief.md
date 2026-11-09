@@ -22,7 +22,7 @@
 - Fallback when the model is unavailable or uncertain:
 
 ## Data and safety
-- Data sources and permissions:
+- Data locations and permissions:
 - Sensitive data involved:
 - Retention and deletion rules:
 - Prompt-injection exposure:
