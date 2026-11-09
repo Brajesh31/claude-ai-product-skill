@@ -1,0 +1,4 @@
+Scenario,Requests per day,Input tokens per request,Output tokens per request,Input price per million tokens,Output price per million tokens,Calls per task,Retry rate,Retrieval cost per task,Tool cost per task,Storage cost per task,Estimated cost per task,Estimated daily cost,Notes
+baseline,,,,,,,,,,,,,
+high-volume,,,,,,,,,,,,,
+peak-load,,,,,,,,,,,,,
